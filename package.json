@@ -1,0 +1,26 @@
+{
+  "name": "calc-electron",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4"
+  },
+  "main": "src/electron-starter.js",
+  "homepage": "./",
+  "scripts": {
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "react-start": "$(npm bin)/react-scripts start",
+    "electron-start": "ELECTRON_START_URL=http://localhost:3000 ELECTRON_DEV=1 $(npm bin)/electron .",
+    "start": "$(npm bin)/concurrently 'npm run react-start' '$(npm bin)/wait-on http://localhost:3000 && npm run electron-start'"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1",
+    "electron": "^2.0.7",
+    "wait-on": "^2.1.0"
+  }
+}
