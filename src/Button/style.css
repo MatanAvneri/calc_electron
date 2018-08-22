@@ -1,0 +1,17 @@
+.button {
+    font-size: 23px;
+    font-weight: 100;
+    background: #E0E0E0;
+    color: #1D1D1D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8E8E8E;
+    flex: 1;
+    min-width: 0;
+}
+
+.button[data-op="true"] {
+    background: #FE9241;
+    color: white;
+}

@@ -1,0 +1,11 @@
+.result {
+    background: #979697;
+    font-weight: 100;
+    color: white;
+    height: 79px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 50px;
+    padding: 0 12px;
+}
